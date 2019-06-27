@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</head>
+<body>
+    <div id="panel1">
+        <div id="titlecontainer" class="titlecontainer animated fadeInDownBig">
+            <div class="info">
+                <div class="title animated tada" style="animation-delay: 2s;">
+                    <div id="header">8 PUZZLE</div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="title animated jackInTheBox" style="animation-delay: 1s;">Name Surname</div>
+            </div>
+            
+            <div class="info">
+                <div class="title animated fadeInDown" style="animation-delay: 2s;">12345678912</div>
+            </div>
+
+            <div class="title animated fadeInDown" style="animation-delay: 1s;"><button class="button1">Start!</button></div>
+        </div>
+    </div>
+    
+
+    <div id="panel2">
+        <div id="imagespagecontainer">
+            <div id="selectimagetitle"><h1>Select an Image</h1></div>
+    
+            <div id="imagecontainer">
+                <div class="images"><img id="img1" src="img1.jpg" alt="img"></div>
+                <div class="images"><img id="img2" src="img2.jpg" alt="img"></div>
+                <div class="images"><img id="img3" src="img3.jpg" alt="img"></div>
+            </div>
+    
+            <div class="buttoncontainer" style="display: none;">
+                <div class="title animated jackInTheBox" style="animation-delay: 0.2s;"><button class="button2">Continue!</button></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="panel3">
+        <div id="piece1" class="piece"></div>
+        <div id="piece2" class="piece"></div>
+        <div id="piece3" class="piece"></div>
+        <div id="piece4" class="piece"></div>
+        <div id="piece5" class="piece"></div>
+        <div id="piece6" class="piece"></div>
+        <div id="piece7" class="piece"></div>
+        <div id="piece8" class="piece"></div>
+
+        <div id="select">Select : </div>
+        <select id="shuffleoption">
+            <option value="0" selected>Shuffle Amount!</option>
+            <option value="3">3 Moves</option>
+            <option value="30">30 Moves</option>
+        </select>
+
+        <button class="title animated rubberBand" id="shufflebutton">Shuffle</button>
+        <div id="solvebutton">SOLVE PUZZLE NOW</div>
+    </div>
+    <div class="title animated flip" id="true">CONGRATULATIONS</div>
+    <div class="title animated slideInRight" id="restart">F5 to Restart</div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
